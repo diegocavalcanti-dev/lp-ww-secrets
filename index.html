@@ -15,7 +15,7 @@
     content="https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/"
   >
   <meta property="og:title" content="100 Segredos Ocultos da Segunda Guerra Mundial" />
-  <meta property="og:description" content="5 frentes, 100 segredos e 377 páginas em um dossiê especial da Cenas de Combate." />
+  <meta property="og:description" content="5 frentes, 100 segredos e 350 páginas em um dossiê especial da Cenas de Combate." />
   <meta property="og:type" content="website" />
   <meta
   property="og:image"
@@ -329,6 +329,7 @@
       display: grid;
       place-items: center;
       min-width: 0;
+      /* width: 100%; */      
     }
 
     .mockup-wrap::before {
@@ -343,7 +344,12 @@
     .mockup {
       position: relative;
       z-index: 1;
-      width: min(100%, 630px);
+      
+      /* MODIFICAÇÕES AQUI: */
+      width: 120%; /* Força a imagem a ignorar limites estreitos da coluna e crescer */
+      max-width: 800px; /* Altere este valor em pixels para definir o tamanho máximo ideal */
+      height: auto; /* Mantém a proporção perfeita para não deformar o livro */
+      
       filter: drop-shadow(0 28px 34px rgba(7,15,23,.16));
     }
 
@@ -1006,7 +1012,7 @@
           </p>
 
           <div class="hero-badges" aria-label="Informações do ebook">
-            <span class="badge">377 páginas</span>
+            <span class="badge">+350 páginas</span>
             <span class="badge">100 histórias</span>
             <span class="badge">5 frentes editoriais</span>
             <!-- <span class="badge">PDF digital</span> -->
@@ -1017,7 +1023,7 @@
               <small>Preço de lançamento</small>
               <div class="price-row">
                 <span class="price-old">R$ 79,90</span>
-                <span class="price-now">12x R$ 3,80</span>
+                <span class="price-now">9x R$ 5,04</span>
               </div>
               <small style="margin-top:4px;color:#45505b;">ou <strong style="color:var(--ink)">R$ 37,90</strong> à vista</small>
             </div>
@@ -1035,7 +1041,7 @@
 
     <section class="stats-strip" aria-label="Resumo do produto">
       <div class="container stats-grid">
-        <div class="stat"><strong>377</strong><span>páginas</span></div>
+        <div class="stat"><strong>+350</strong><span>páginas</span></div>
         <div class="stat"><strong>100</strong><span>segredos</span></div>
         <div class="stat"><strong>5</strong><span>frentes</span></div>
         <div class="stat"><strong>1</strong><span>dossiê completo</span></div>
@@ -1182,8 +1188,8 @@
 
     <section style="background:var(--navy-2);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:36px 0;text-align:center;">
       <div class="container" style="display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;">
-        <p style="color:#b9c4cd;font-size:15px;font-weight:600;margin:0;">377 páginas, 100 histórias, garantia de 7 dias.</p>
-        <a class="cta checkout-link" href="#" style="min-height:48px;padding:13px 22px;font-size:13px;">Acessar por 12x de R$ 3,80 →</a>
+        <p style="color:#b9c4cd;font-size:15px;font-weight:600;margin:0;">+350 páginas, 100 histórias, garantia de 7 dias.</p>
+        <a class="cta checkout-link" href="#" style="min-height:48px;padding:13px 22px;font-size:13px;">Acessar por 9x de R$ 5,04 →</a>
       </div>
     </section>
 
@@ -1244,11 +1250,11 @@
         <div class="offer-card">
           <div class="eyebrow">Oferta de lançamento</div>
           <h2>Receba o dossiê completo.</h2>
-          <p>100 segredos, 5 frentes editoriais e 377 páginas reunidas em um único eBook digital da Cenas de Combate.</p>
+          <p>100 segredos, 5 frentes editoriais e +350 páginas reunidas em um único eBook digital da Cenas de Combate.</p>
 
           <div class="offer-price">
             <span class="old">De R$ 79,90</span>
-            <span class="now">12x <span>R$ 3,80</span></span>
+            <span class="now">9x <span>R$ 5,04</span></span>
             <span style="display:block;margin-top:6px;color:#939faa;font-family:Inter,sans-serif;font-size:15px;font-weight:600;">ou <strong style="color:white">R$ 37,90</strong> à vista</span>
           </div>
 
@@ -1272,7 +1278,7 @@
           </details>
           <details>
             <summary>Quantas páginas o eBook possui?</summary>
-            <p>O dossiê possui 377 páginas e reúne 100 segredos organizados em cinco grandes frentes editoriais.</p>
+            <p>O dossiê possui +350 páginas e reúne 100 segredos organizados em cinco grandes frentes editoriais.</p>
           </details>
           <details>
             <summary>Posso ler no celular?</summary>
@@ -1303,14 +1309,12 @@
   </footer>
 
   <div class="mobile-buy" id="mobileBuy" aria-label="Comprar ebook">
-    <div class="m-price"><small>De <s style="color:#6b7680">R$ 79,90</s> por 12x</small>R$ 3,80</div>
+    <div class="m-price"><small>De <s style="color:#6b7680">R$ 79,90</s> por 9x</small>R$ 5,04</div>
     <a class="cta checkout-link" href="#">Garantir acesso →</a>
   </div>
 
   <script>
-    // COLE AQUI O LINK REAL DO SEU CHECKOUT.
-    // Exemplo: const CHECKOUT_URL = 'https://pay.cakto.com.br/seu-checkout';
-    const CHECKOUT_URL = 'COLE_AQUI_O_LINK_DO_CHECKOUT';
+    const CHECKOUT_URL = 'https://pay.cakto.com.br/3eudzie_1078721';
 
     document.querySelectorAll('.checkout-link').forEach((link) => {
       link.addEventListener('click', (event) => {
