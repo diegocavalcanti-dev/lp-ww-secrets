@@ -15,13 +15,8 @@
     content="https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/"
   >
   <meta property="og:title" content="100 Segredos Ocultos da Segunda Guerra Mundial" />
-  <meta property="og:description" content="5 frentes, 100 segredos e 377 páginas em um dossiê especial da Cenas de Combate." />
+  <meta property="og:description" content="5 frentes, 100 segredos e 350 páginas em um dossiê especial da Cenas de Combate." />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Cenas de Combate" />
-  <meta property="og:locale" content="pt_BR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="100 Segredos Ocultos da Segunda Guerra Mundial" />
-  <meta name="twitter:description" content="377 páginas, 100 segredos e 5 frentes em um dossiê digital da Cenas de Combate." />
   <meta
   property="og:image"
   content="https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/assets/livro-mockup.webp"
@@ -30,25 +25,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "100 Segredos Ocultos da Segunda Guerra Mundial",
-    "description": "Dossiê digital com 100 histórias sobre espionagem, armas secretas, batalhas esquecidas, figuras ocultas e os bastidores do pós-guerra.",
-    "brand": {"@type": "Brand", "name": "Cenas de Combate"},
-    "image": "https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/assets/livro-mockup.webp",
-    "offers": {
-      "@type": "Offer",
-      "priceCurrency": "BRL",
-      "price": "37.90",
-      "availability": "https://schema.org/InStock",
-      "url": "https://pay.cakto.com.br/3eudzie_1078721"
-    }
-  }
-  </script>
 
   <style>
     :root {
@@ -149,6 +125,23 @@
   font-size: 0.9rem;
 }
 
+.countdown-timer-g {
+  background: #025118; /* Fundo preto para dar o contraste ideal no amarelo */
+  color: #fff;      /* Números brancos */
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: monospace; /* Fonte fixa para os números não ficarem tremendo ao mudar */
+  font-size: 0.9rem;
+}
+
+.countdown-timer-r {
+  background: #b70101; /* Fundo preto para dar o contraste ideal no amarelo */
+  color: #fff;      /* Números brancos */
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: monospace; /* Fonte fixa para os números não ficarem tremendo ao mudar */
+  font-size: 0.9rem;
+}
 
     .site-header {
       background: rgba(9,19,31,.97);
@@ -803,65 +796,6 @@
       font-size: 12px;
     }
 
-
-    .authority-grid {
-      display: grid;
-      grid-template-columns: .78fr 1.22fr;
-      gap: 48px;
-      align-items: center;
-      padding: 42px;
-      border: 1px solid var(--line-light);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.52);
-      box-shadow: 0 22px 60px rgba(15,25,35,.08);
-    }
-
-    .authority-mark {
-      min-height: 240px;
-      display: grid;
-      place-items: center;
-      border-radius: 16px;
-      background: var(--navy);
-      color: white;
-      text-align: center;
-      padding: 34px;
-    }
-
-    .authority-mark strong {
-      display: block;
-      font-family: "Barlow Condensed", sans-serif;
-      font-size: clamp(42px, 5vw, 66px);
-      line-height: .95;
-      text-transform: uppercase;
-    }
-
-    .authority-mark span {
-      display: block;
-      margin-top: 12px;
-      color: var(--gold-bright);
-      font-size: 12px;
-      font-weight: 900;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-
-    .authority-copy h2 {
-      margin-top: 12px;
-      font-size: clamp(44px, 5vw, 64px);
-    }
-
-    .authority-copy p {
-      margin-top: 17px;
-      color: #59636d;
-      font-size: 15px;
-    }
-
-    .secure-note {
-      margin-top: 12px;
-      color: #8e9aa5;
-      font-size: 11px;
-    }
-
     .faq {
       max-width: 900px;
       margin: 0 auto;
@@ -982,7 +916,6 @@
       .preview-layout { grid-template-columns: 1fr; gap: 50px; }
       .page-gallery { max-width: 760px; margin-inline: auto; }
       .for-who-grid { grid-template-columns: 1fr; }
-      .authority-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 760px) {
@@ -1029,8 +962,6 @@
       .page-shot:nth-child(2),
       .page-shot:nth-child(3) { transform: none; }
       .offer-card { padding: 38px 22px; }
-      .authority-grid { padding: 24px; gap: 26px; }
-      .authority-mark { min-height: 190px; }
       .offer-price .now { font-size: 62px; }
       .mobile-buy { display: flex; }
       .footer { padding-bottom: 90px; }
@@ -1050,8 +981,13 @@
 <body>
 
   <div class="topbar">
-    <span>OFERTA ESPECIAL DE LANÇAMENTO</span>
-    <span class="countdown-timer">70% OFF</span>
+    <span>OFERTA especial de lançamento
+      <span class="countdown-timer">70% OFF</span>
+      <!-- <span class="countdown-timer">: R$ 37,90</span> -->
+    </span>
+    <!-- <span class="timer-wrapper">
+      A oferta expira em: <span id="countdown" class="countdown-timer-r">19:59</span>
+    </span> -->
   </div>
 
 
@@ -1072,40 +1008,40 @@
           <div class="eyebrow">Dossiê especial</div>
           <h1>100 segredos <span class="gold">ocultos</span> da Segunda Guerra Mundial</h1>
           <p class="hero-lead">
-            Descubra 100 histórias de espionagem, operações secretas, armas experimentais, batalhas esquecidas e personagens extraordinários que revelam uma Segunda Guerra Mundial muito além dos acontecimentos mais conhecidos.
+            Vá além das batalhas mais conhecidas e entre nos bastidores da guerra: espionagem, armas secretas, operações esquecidas, figuras extraordinárias e o pós-guerra sombrio.
           </p>
 
           <div class="hero-badges" aria-label="Informações do ebook">
-            <span class="badge">377 páginas</span>
+            <span class="badge">+350 páginas</span>
             <span class="badge">100 histórias</span>
             <span class="badge">5 frentes editoriais</span>
             <!-- <span class="badge">PDF digital</span> -->
           </div>
 
           <div class="offer-inline">
-            <!-- <div class="price">
+            <div class="price">
               <small>Preço de lançamento</small>
               <div class="price-row">
-                <span class="price-old">Regular R$ 59,90</span>
+                <span class="price-old">R$ 79,90</span>
                 <span class="price-now">9x R$ 5,04</span>
               </div>
               <small style="margin-top:4px;color:#45505b;">ou <strong style="color:var(--ink)">R$ 37,90</strong> à vista</small>
-            </div> -->
+            </div>
             <a class="cta buy-link" href="#oferta">Quero acessar o dossiê <span class="cta-arrow">→</span></a>
           </div>
 
-          <p class="hero-note">Produto digital · Sem assinatura · <strong style="color:#2e7d32">Garantia de 7 dias</strong></p>
+          <p class="hero-note">Pagamento único · Produto digital · <strong style="color:#2e7d32">Garantia de 7 dias</strong></p>
         </div>
 
         <div class="mockup-wrap" aria-label="Mockup do ebook">
-          <img class="mockup" src="assets/livro-mockup-removebg-preview.webp" alt="Livro 100 Segredos Ocultos da Segunda Guerra Mundial" fetchpriority="high" decoding="async" />
+          <img class="mockup" src="assets/livro-mockup-removebg-preview.webp" alt="Livro 100 Segredos Ocultos da Segunda Guerra Mundial" />
         </div>
       </div>
     </section>
 
     <section class="stats-strip" aria-label="Resumo do produto">
       <div class="container stats-grid">
-        <div class="stat"><strong>377</strong><span>páginas</span></div>
+        <div class="stat"><strong>+350</strong><span>páginas</span></div>
         <div class="stat"><strong>100</strong><span>segredos</span></div>
         <div class="stat"><strong>5</strong><span>frentes</span></div>
         <div class="stat"><strong>1</strong><span>dossiê completo</span></div>
@@ -1116,16 +1052,16 @@
       <div class="container">
         <div class="section-head">
           <div class="eyebrow">A guerra por trás da guerra</div>
-          <h2>Há muito mais por trás das batalhas conhecidas.</h2>
+          <h2>A história oficial é só a superfície.</h2>
         </div>
 
         <div class="intro-panel">
           <div class="intro-image" aria-hidden="true"></div>
           <div class="intro-copy">
-            <h3>A guerra também foi decidida longe do campo de batalha.</h3>
+            <h3>Nem tudo aconteceu diante das câmeras.</h3>
             <div class="gold-line"></div>
             <p>
-              Enquanto exércitos se enfrentavam, códigos eram quebrados, agentes duplos construíam operações de desinformação, novas tecnologias eram testadas e decisões estratégicas permaneciam em sigilo por anos. <strong>É esse lado menos conhecido do conflito que o dossiê explora.</strong>
+              Enquanto exércitos se enfrentavam nos campos de batalha, outra guerra acontecia longe do público: <strong>códigos eram quebrados, agentes duplos fabricavam mentiras, cientistas desenvolviam novas armas e governos escondiam decisões que só seriam conhecidas décadas depois.</strong>
             </p>
             <p>
               Este eBook organiza 100 dessas histórias em um único dossiê para quem quer entender a Segunda Guerra Mundial além dos acontecimentos mais repetidos.
@@ -1193,7 +1129,7 @@
         <div class="section-head center">
           <div class="eyebrow">5 frentes • 100 segredos</div>
           <h2>Cinco frentes. Uma única guerra vista por dentro.</h2>
-          <p>Os 100 segredos foram organizados em cinco grandes frentes para tornar a leitura mais clara, progressiva e fácil de explorar.</p>
+          <p>As imagens abaixo foram extraídas das aberturas das cinco frentes do próprio dossiê e reorganizadas para a página de vendas.</p>
         </div>
 
         <div class="fronts-grid">
@@ -1252,8 +1188,8 @@
 
     <section style="background:var(--navy-2);border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark);padding:36px 0;text-align:center;">
       <div class="container" style="display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;">
-        <p style="color:#b9c4cd;font-size:15px;font-weight:600;margin:0;">377 páginas, 100 histórias e garantia de 7 dias.</p>
-        <a class="cta checkout-link" href="https://pay.cakto.com.br/3eudzie_1078721" rel="noopener" style="min-height:48px;padding:13px 22px;font-size:13px;">Acessar por 9x de R$ 5,04 →</a>
+        <p style="color:#b9c4cd;font-size:15px;font-weight:600;margin:0;">+350 páginas, 100 histórias, garantia de 7 dias.</p>
+        <a class="cta checkout-link" href="#" style="min-height:48px;padding:13px 22px;font-size:13px;">Acessar por 9x de R$ 5,04 →</a>
       </div>
     </section>
 
@@ -1263,7 +1199,7 @@
           <div class="eyebrow">Veja por dentro</div>
           <h2>Não é uma lista rasa de curiosidades.</h2>
           <p>
-            Cada segredo apresenta o acontecimento, o contexto histórico e suas consequências para que você entenda não apenas o que ocorreu, mas por que aquela história importa dentro do conflito.
+            Cada tema foi organizado para você entender o acontecimento, o contexto e por que aquela história importa dentro da guerra.
           </p>
 
           <ul class="check-list">
@@ -1276,8 +1212,8 @@
         </div>
 
         <div class="page-gallery" aria-label="Páginas internas do ebook">
-          <div class="page-shot"><img src="assets/preview-01.webp" alt="Página interna do ebook" loading="lazy" decoding="async" /></div>
-          <div class="page-shot"><img src="assets/preview-02.webp" alt="Página interna do ebook" loading="lazy" decoding="async" /></div>
+          <div class="page-shot"><img src="assets/preview-01.webp" alt="Página interna do ebook" /></div>
+          <div class="page-shot"><img src="assets/preview-02.webp" alt="Página interna do ebook" /></div>
         </div>
       </div>
     </section>
@@ -1309,41 +1245,21 @@
       </div>
     </section>
 
-    <section class="section section-paper">
-      <div class="container">
-        <div class="authority-grid">
-          <div class="authority-mark" aria-label="Cenas de Combate">
-            <div>
-              <strong>Cenas de<br>Combate</strong>
-              <span>História militar em profundidade</span>
-            </div>
-          </div>
-          <div class="authority-copy">
-            <div class="eyebrow">Quem está por trás do dossiê</div>
-            <h2>Um projeto editorial da Cenas de Combate.</h2>
-            <p>Este eBook foi desenvolvido para leitores que querem ir além de resumos superficiais. São 100 temas organizados em 377 páginas, com uma identidade visual própria e uma estrutura de leitura que combina contexto, narrativa histórica e consequências dos acontecimentos.</p>
-            <p>O objetivo é reunir em um único material episódios que normalmente aparecem dispersos entre livros, documentários e arquivos históricos, transformando-os em uma experiência de leitura clara e envolvente.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section offer-section" id="oferta">
       <div class="container">
         <div class="offer-card">
           <div class="eyebrow">Oferta de lançamento</div>
           <h2>Receba o dossiê completo.</h2>
-          <p>100 segredos, 5 frentes editoriais e 377 páginas reunidas em um único eBook digital da Cenas de Combate.</p>
+          <p>100 segredos, 5 frentes editoriais e +350 páginas reunidas em um único eBook digital da Cenas de Combate.</p>
 
           <div class="offer-price">
-            <span class="old">Preço regular R$ 59,90</span>
+            <span class="old">De R$ 79,90</span>
             <span class="now">9x <span>R$ 5,04</span></span>
             <span style="display:block;margin-top:6px;color:#939faa;font-family:Inter,sans-serif;font-size:15px;font-weight:600;">ou <strong style="color:white">R$ 37,90</strong> à vista</span>
           </div>
 
-          <a class="cta checkout-link" href="https://pay.cakto.com.br/3eudzie_1078721" rel="noopener">Quero acessar o dossiê <span class="cta-arrow">→</span></a>
-          <div class="offer-mini">Produto digital · sem assinatura · <strong style="color:#4caf50">garantia de 7 dias</strong></div>
-          <div class="secure-note">Compra processada em ambiente seguro pela Cakto. Acesso enviado após a confirmação do pagamento.</div>
+          <a class="cta checkout-link" href="#">Quero acessar o dossiê <span class="cta-arrow">→</span></a>
+          <div class="offer-mini">Pagamento único · produto digital · <strong style="color:#4caf50">garantia incondicional de 7 dias</strong></div>
         </div>
       </div>
     </section>
@@ -1362,7 +1278,7 @@
           </details>
           <details>
             <summary>Quantas páginas o eBook possui?</summary>
-            <p>O dossiê possui 377 páginas e reúne 100 segredos organizados em cinco grandes frentes editoriais.</p>
+            <p>O dossiê possui +350 páginas e reúne 100 segredos organizados em cinco grandes frentes editoriais.</p>
           </details>
           <details>
             <summary>Posso ler no celular?</summary>
@@ -1393,49 +1309,67 @@
   </footer>
 
   <div class="mobile-buy" id="mobileBuy" aria-label="Comprar ebook">
-    <div class="m-price"><small>Regular <s style="color:#6b7680">R$ 59,90</s> · 9x</small>R$ 5,04</div>
-    <a class="cta checkout-link" href="https://pay.cakto.com.br/3eudzie_1078721" rel="noopener">Garantir acesso →</a>
+    <div class="m-price"><small>De <s style="color:#6b7680">R$ 79,90</s> por 9x</small>R$ 5,04</div>
+    <a class="cta checkout-link" href="#">Garantir acesso →</a>
   </div>
 
   <script>
-    (function () {
-      const CHECKOUT_URL = 'https://pay.cakto.com.br/3eudzie_1078721';
-      const params = new URLSearchParams(window.location.search);
-      const trackingKeys = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'];
+    const CHECKOUT_URL = 'https://pay.cakto.com.br/3eudzie_1078721';
 
-      function checkoutWithTracking() {
-        const url = new URL(CHECKOUT_URL);
-        trackingKeys.forEach((key) => {
-          const value = params.get(key);
-          if (value) url.searchParams.set(key, value);
-        });
-        return url.toString();
-      }
-
-      document.querySelectorAll('.checkout-link').forEach((link) => {
-        link.href = checkoutWithTracking();
-        link.addEventListener('click', () => {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({ event: 'click_buy', product_name: '100 Segredos Ocultos da Segunda Guerra Mundial', value: 37.90, currency: 'BRL' });
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', 'click_buy', { value: 37.90, currency: 'BRL', item_name: '100 Segredos Ocultos da Segunda Guerra Mundial' });
-          }
-        });
+    document.querySelectorAll('.checkout-link').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        if (!CHECKOUT_URL || CHECKOUT_URL.includes('COLE_AQUI')) {
+          event.preventDefault();
+          alert('Configure o link do checkout na constante CHECKOUT_URL, no final do arquivo index.html.');
+          return;
+        }
+        link.href = CHECKOUT_URL;
       });
+    });
+  </script>
+  <script>
+    (function () {
+      const TEMPO_EM_MINUTOS = 19.59; // Defina o tempo da oferta aqui
+      const DURACAO_TOTAL = TEMPO_EM_MINUTOS * 60 * 1000; // Converte para milissegundos
+      
+      // Recupera o momento em que o usuário acessou a página pela primeira vez
+      let horarioFinal = localStorage.getItem('oferta_fim_timestamp');
 
-      const offer = document.getElementById('oferta');
-      if ('IntersectionObserver' in window && offer) {
-        let sent = false;
-        const observer = new IntersectionObserver((entries) => {
-          if (!sent && entries.some((entry) => entry.isIntersecting)) {
-            sent = true;
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'view_offer', product_name: '100 Segredos Ocultos da Segunda Guerra Mundial' });
-            observer.disconnect();
-          }
-        }, { threshold: 0.35 });
-        observer.observe(offer);
+      if (!horarioFinal) {
+        // Se é o primeiro acesso, calcula o horário de término e salva no cache
+        horarioFinal = Date.now() + DURACAO_TOTAL;
+        localStorage.setItem('oferta_fim_timestamp', horarioFinal);
+      } else {
+        horarioFinal = parseInt(horarioFinal, 10);
       }
+
+      const display = document.getElementById('countdown');
+
+      function atualizarCronometro() {
+        const agora = Date.now();
+        const tempoRestante = horarioFinal - agora;
+
+        if (tempoRestante <= 0) {
+          // Quando o tempo acaba, fixa em 00:00 (ou você pode esconder a barra se preferir)
+          display.textContent = "00:00";
+          clearInterval(intervalo);
+          return;
+        }
+
+        // Calcula minutos e segundos restantes
+        const minutos = Math.floor((tempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+        const segundos = Math.floor((tempoRestante % (1000 * 60)) / 1000);
+
+        // Formata para ter sempre dois dígitos (ex: 09:05)
+        const minFormatado = minutos < 10 ? '0' + minutos : minutos;
+        const segFormatado = segundos < 10 ? '0' + segundos : segundos;
+
+        display.textContent = `${minFormatado}:${segFormatado}`;
+      }
+
+      // Executa imediatamente e depois a cada 1 segundo
+      atualizarCronometro();
+      const intervalo = setInterval(atualizarCronometro, 1000);
     })();
   </script>
   <script>
