@@ -6,6 +6,31 @@
   <title>100 Segredos Ocultos da Segunda Guerra Mundial | Cenas de Combate</title>
   <meta name="description" content="Dossiê digital com 100 histórias sobre espionagem, armas secretas, batalhas esquecidas, figuras ocultas e os bastidores do pós-guerra." />
   <meta name="theme-color" content="#0a1320" />
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+      c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+      t=l.createElement(r);
+      t.async=1;
+      t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xurb6p38hf");
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZCNKGMJ6EV"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag(){
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'G-ZCNKGMJ6EV');
+  </script>
   <link
   rel="canonical"
   href="https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/"
@@ -19,6 +44,10 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Cenas de Combate" />
   <meta property="og:locale" content="pt_BR" />
+  <meta
+  name="twitter:image"
+  content="https://www.cenasdecombate.com/100-segredos-ocultos-da-segunda-guerra-mundial/assets/livro-mockup.webp"
+/>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="100 Segredos Ocultos da Segunda Guerra Mundial" />
   <meta name="twitter:description" content="377 páginas, 100 segredos e 5 frentes em um dossiê digital da Cenas de Combate." />
@@ -43,7 +72,7 @@
     "offers": {
       "@type": "Offer",
       "priceCurrency": "BRL",
-      "price": "37.90",
+      "price": "29.90",
       "availability": "https://schema.org/InStock",
       "url": "https://pay.cakto.com.br/3eudzie_1078721"
     }
@@ -1418,12 +1447,27 @@
       document.querySelectorAll('.checkout-link').forEach((link) => {
         link.href = checkoutWithTracking();
         link.addEventListener('click', () => {
-          window.dataLayer = window.dataLayer || [];
-          window.dataLayer.push({ event: 'click_buy', product_name: '100 Segredos Ocultos da Segunda Guerra Mundial', value: 37.90, currency: 'BRL' });
-          if (typeof window.gtag === 'function') {
-            window.gtag('event', 'click_buy', { value: 37.90, currency: 'BRL', item_name: '100 Segredos Ocultos da Segunda Guerra Mundial' });
-          }
+        window.dataLayer = window.dataLayer || [];
+
+        window.dataLayer.push({
+          event: 'click_buy',
+          product_name: '100 Segredos Ocultos da Segunda Guerra Mundial',
+          value: 29.90,
+          currency: 'BRL'
         });
+
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'click_buy', {
+            value: 29.90,
+            currency: 'BRL',
+            item_name: '100 Segredos Ocultos da Segunda Guerra Mundial'
+          });
+        }
+
+        if (typeof window.clarity === 'function') {
+          window.clarity('event', 'click_buy');
+        }
+      });
       });
 
       const offer = document.getElementById('oferta');
@@ -1431,11 +1475,28 @@
         let sent = false;
         const observer = new IntersectionObserver((entries) => {
           if (!sent && entries.some((entry) => entry.isIntersecting)) {
-            sent = true;
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: 'view_offer', product_name: '100 Segredos Ocultos da Segunda Guerra Mundial' });
-            observer.disconnect();
+          sent = true;
+
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: 'view_offer',
+            product_name: '100 Segredos Ocultos da Segunda Guerra Mundial'
+          });
+
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'view_offer', {
+              product_name: '100 Segredos Ocultos da Segunda Guerra Mundial',
+              value: 29.90,
+              currency: 'BRL'
+            });
           }
+
+          if (typeof window.clarity === 'function') {
+            window.clarity('event', 'view_offer');
+          }
+
+          observer.disconnect();
+        }
         }, { threshold: 0.35 });
         observer.observe(offer);
       }
